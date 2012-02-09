@@ -1,0 +1,15 @@
+{
+  "name": "BetterNetbank",
+  "version": "1",
+  "description": "Extensions to Commbank's netbank to make it more usable",
+  "background_page": "background.html",
+  "browser_action": {
+    "name": "BetterNetbank",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "background.js" ],
+    "matches": [ "http://*.my.commbank.com.au/netbank/*", "https://*.my.commbank.com.au/netbank/*"]
+  }]
+}
