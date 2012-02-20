@@ -8,8 +8,11 @@
     "icons": ["icon.png"],
     "default_icon": "icon.png"
   },
+  "permissions": [
+    "tabs"
+  ],
   "content_scripts": [ {
     "js": [ "jquery.min.js", "background.js" ],
-    "matches": [ "http://*.my.commbank.com.au/netbank/*", "https://*.my.commbank.com.au/netbank/*"]
+    "matches": [ "http://*.my.commbank.com.au/netbank/*", "https://*.my.commbank.com.au/netbank/*" ]
   }]
 }
